@@ -7,7 +7,7 @@ class CRMController {
   // GET /api/crm/:email
   async getCRMData(req, res) {
     try {
-      const email = req.params.email.toLowerCase();
+     const email = decodeURIComponent(req.params.email).toLowerCase();
       const contact = contacts.find(c => c.email.toLowerCase() === email);
       
       if (!contact) {
@@ -150,5 +150,6 @@ class CRMController {
     return 'Regular follow-up recommended';
   }
 }
+
 
 module.exports = new CRMController();
