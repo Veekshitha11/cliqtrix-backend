@@ -1,0 +1,74 @@
+{
+  "tasks": [
+    {
+      "id": "task_001",
+      "title": "Review Q4 Sales Report",
+      "description": "Analyze quarterly performance metrics and prepare presentation",
+      "priority": "high",
+      "priorityScore": 92,
+      "dueDate": "2025-11-28T10:00:00Z",
+      "estimatedTime": 120,
+      "category": "work",
+      "status": "pending",
+      "fromEmail": "manager@company.com",
+      "createdAt": "2025-11-26T08:30:00Z"
+    },
+    {
+      "id": "task_002",
+      "title": "Respond to Client Inquiry",
+      "description": "Answer questions about product pricing and features",
+      "priority": "medium",
+      "priorityScore": 68,
+      "dueDate": "2025-11-27T14:00:00Z",
+      "estimatedTime": 30,
+      "category": "communication",
+      "status": "pending",
+      "fromEmail": "client@startup.io",
+      "createdAt": "2025-11-26T09:15:00Z"
+    },
+    {
+      "id": "task_003",
+      "title": "Schedule Team Sync",
+      "description": "Find time slot for weekly standup meeting",
+      "priority": "low",
+      "priorityScore": 45,
+      "dueDate": "2025-11-29T16:00:00Z",
+      "estimatedTime": 15,
+      "category": "admin",
+      "status": "pending",
+      "fromEmail": "team@company.com",
+      "createdAt": "2025-11-26T10:00:00Z"
+    }
+  ],
+  "crmContacts": [
+    {
+      "email": "client@startup.io",
+      "name": "Sarah Johnson",
+      "company": "TechStart Inc",
+      "position": "Product Manager",
+      "engagementScore": 87,
+      "lastContact": "2025-11-25T15:30:00Z",
+      "totalInteractions": 24,
+      "dealValue": 50000,
+      "priority": "high"
+    },
+    {
+      "email": "manager@company.com",
+      "name": "Michael Chen",
+      "company": "Internal",
+      "position": "Sales Director",
+      "engagementScore": 95,
+      "lastContact": "2025-11-26T08:00:00Z",
+      "totalInteractions": 156,
+      "dealValue": 0,
+      "priority": "critical"
+    }
+  ],
+  "timeDebt": {
+    "totalPendingMinutes": 1650,
+    "totalOverdueMinutes": 240,
+    "score": 73,
+    "status": "moderate",
+    "recommendation": "Focus on high-priority tasks first to reduce debt"
+  }
+}
