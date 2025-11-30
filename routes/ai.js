@@ -1,17 +1,14 @@
+// routes/ai.js
 const express = require('express');
 const router = express.Router();
-const aiController = require('../controllers/aiController');
 
-// Generate Plan My Day
-router.get('/plan-day', aiController.generateDailyPlan);
+const {
+  getDailyPlan,
+  getTimeDebt
+} = require('../controllers/aiController');
 
-// Calculate Time Debt Score
-router.get('/time-debt', aiController.getTimeDebtScore);
-
-// Summarize email into task
-router.post('/summarize', aiController.summarizeEmail);
-
-// Get priority score for task
-router.post('/priority', aiController.calculatePriority);
+// AI endpoints
+router.get('/plan-day', getDailyPlan);
+router.get('/time-debt', getTimeDebt);
 
 module.exports = router;
